@@ -1,0 +1,5 @@
+Appointment details
+<br><ul>
+<li><%= @app.appointment_datetime.strftime("%B %d, %Y at %k:%M")%></li>
+<li><%= link_to @app.doctor.name, doctor_path(@app.doctor) %></li>
+<li><%= link_to @app.patient.name, patient_path(@app.patient) %></li></ul>
